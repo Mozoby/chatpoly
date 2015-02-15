@@ -1,4 +1,4 @@
 #!/bin/sh
-set HOME = /home/azureuser
+export HOME=/home/azureuser
 erl -compile ./client/erlang/websocket.erl
 erl -noshell -s websocket start -s init stop
