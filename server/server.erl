@@ -82,4 +82,3 @@ send_data(From, Sockets, Data) ->
 
 % send_data(private, Target, [{User, Socket} | Tail], Data) ->
 	
-

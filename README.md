@@ -1,6 +1,6 @@
 # chatpoly
 
-Usage is simple.
+Usage is rudimentary right now, it requires use of multiple erlang shells.
 
 Open two terminals, one for client, another for the server. Change the working directory of both to the root directory of chatpoly.
 

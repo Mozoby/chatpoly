@@ -19,7 +19,7 @@ socket_receive(Socket) ->
 		{ok, Data} ->
 			case binary_to_term(Data) of
 				{message, Username, Message} ->
-					io:format("~s: ~s~n", [Username, Message])
+					io:format("~s: ~s", [Username, Message])
 			end,
 			socket_receive(Socket);
 		{error, Reason} ->
