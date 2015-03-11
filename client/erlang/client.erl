@@ -2,7 +2,7 @@
 -export([start/0]).
 
 start() ->
-	{ok, Socket} = gen_tcp:connect({127,0,0,1}, 8080, [binary, {active,false}]),
+	{ok, Socket} = gen_tcp:connect({104,40,87,190}, 8080, [binary, {active,false}]),
 	spawn(fun() -> socket_receive(Socket) end),
 	Username=io:get_line("username: "),
 	gen_tcp:send(Socket, Username),

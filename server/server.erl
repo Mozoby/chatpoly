@@ -65,6 +65,9 @@ manage_connections(List) ->
 			NewList = [{Socket, Username} | List],
 			manage_connections(NewList);
 
+		{disconnect, Socket, Username} ->
+			NewList = lists:delete
+
 		{broadcast, Username, Message} ->
 			send_data(Username, List, Message),
 			manage_connections(List)
